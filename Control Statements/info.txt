@@ -1,0 +1,15 @@
+Type of Control Statements in C language
+
+* Selection Statements      *Iterative Statements        *Jump Statements
+- if...else                  - while Statement               - break
+- switch                     - do while Statement            - continue
+                             - for Statement                 - goto
+
+
+#include<stdio.h>
+int main()
+{
+    int a;
+
+    return 0;
+}

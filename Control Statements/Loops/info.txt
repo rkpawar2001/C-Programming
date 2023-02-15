@@ -1,0 +1,7 @@
+// Loops are used when we want to use execute a part the of the program or
+    a block of statements several times
+
+    Loops statements
+        * while statement
+       ** do-while statement
+      *** for statement

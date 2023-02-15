@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impress My Crush</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 50px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .output {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>A Message for My Crush</h1>
+        <p>I just wanted to take a moment to let you know how much you mean to me. I know this page may seem a little
+            silly, but I wanted to find a way to express my feelings that was a little more creative than just a text or
+            a note. So, here's a message written in code.</p>
+        <div class="output">
+            <!-- The message will appear here -->
+        </div>
+    </div>
+
+    <script>
+        const message =
+            "You light up my world like nobody else. I am so grateful to have you in my life and I cannot wait to see what the future holds for us.";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < message.length) {
+                document.querySelector('.output').innerHTML += message.charAt(index);
+                index++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+
+        typeWriter();
+    </script>
+</body>
+
+</html>
